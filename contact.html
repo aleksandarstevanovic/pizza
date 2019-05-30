@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pizza restoran</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+	<script src="js/validation.js"> </script>
+</head>
+<body>
+	<div class="loader">
+		<img src="img/loader.gif" alt="">
+	</div>
+	<nav class="navbar  navbar-expand-md  contact-navbar navbar-fixed-top">
+	<div class="container">
+		<a href="index.html">  <img src="img/logo.png" alt="" width="100px" height="70px"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarsExampleDefault">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="index.html#aboutUs">About us</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+
+				<div class="contact-information mt-4">
+					<div class="container">
+						<h1 class="text-center mb-5">Contact</h1>
+					<div class="row d-flex justify-content-between">
+				<div id="phone " class="col-md-3 col-sm-12 icon text-center">
+					<img src="img/phone.png" alt="">
+				<p class="mb-0 mt-2">+381 13 3834947</p>
+				<p>+381 13 2435977</p>
+			</div>
+			<div id="email " class="col-md-3 col-sm-12 icon text-center">
+				<img src="img/email.png" alt="">
+				<p class="mb-0 mt-2">info@gmail.com</p>
+				<p>support@gmail.com</p>
+		</div>
+		<div id="placeholder " class="col-md-3 col-sm-12 icon text-center">
+			<img src="img/placeholder.png" alt="">
+			<p class="mb-0 mt-2">Bulevar Mihajla Pupina 4</p>
+			<p>Belgrade</p>
+	</div>
+	</div>
+		</div>
+	</div>
+
+
+<div id='bottom-section'>
+<div class="container">
+<div class="row align-self-center">
+		<form id="myForm" onsubmit="event.preventDefault(); return check()" class="col-md-12 col-lg-6 col-sm-12 mb-3">
+    <h1 class="text-center">Get in touch with us</h1>
+
+		  <div class="form-row mt-5">
+		    <div class="form-group col-md-6">
+		      <input type="text" class="form-control" id="firstName" placeholder="First Name" >
+					<div class="invalid-feedback">
+			 Please enter your first name
+		 </div>
+		    </div>
+		    <div class="form-group col-md-6">
+		      <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+					<div class="invalid-feedback">
+			 Please enter your last name
+		 </div>
+		    </div>
+		  </div>
+			<div class="form-row mt-2 ">
+		  <div class="form-group col-md-12">
+		    <input type="text" class="form-control" id="address" placeholder="Enter Street Adress">
+				<div class="invalid-feedback">
+		 Please enter your address
+	 </div>
+		  </div>
+		</div>
+			<div class="form-row mt-2">
+			 <div class="form-group col-md-6">
+				 <input type="email" class="form-control" id="email" placeholder="Email">
+				 <div class="invalid-feedback">
+			Please enter your email address
+		</div>
+			 </div>
+			 <div class="form-group col-md-6">
+				 <input type="text" class="form-control" id="phone" placeholder="Phone number">
+				 <div class="invalid-feedback">
+			Please enter your phone number
+		</div>
+			 </div>
+		 </div>
+		 <div class="form-row mt-2 ">
+		 <div class="form-group col-md-12">
+			 <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Message"></textarea>
+			 <div class="invalid-feedback">
+		Please enter your address
+	</div>
+		 </div>
+	 </div>
+       <div class="col-12 text-center">
+       	<button type="submit" class="btn btn-primary px-4 ">Send</button>
+       </div>
+
+			 <div class=" col-12 text-center mt-" id='sent'>
+
+			 </div>
+
+		</form>
+		<div id="map" class="col-md-12 col-lg-6 col-sm-12 ">
+
+		</div>
+		</div>
+</div>
+</div>
+
+
+
+
+
+
+<!--FOOTER-->
+<footer>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-12 col-md-4">
+				<p>Belgrade,Serbia</p>
+			</div>
+			<div class="col-12 col-md-4">
+				<p>Mon-Saturday</p>
+				<p>12-04</p>
+			</div>
+			<div class="col-12 col-md-4">
+				<p>Poručite na broj:</p>
+				<p>+381 13 3834947</p>
+
+			</div>
+		</div>
+
+	<div class="row text-center p-0 m-0">
+		<div class="col-12 ">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+			<a href="https://sr-rs.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://twitter.com/?lang=sr" target="_blank"><i class="fab fa-twitter"></i></a>
+			<a href="https://accounts.google.com/signin/v2/sl/pwd?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+			<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+		</div>
+		<div class="col-12">
+		<img src="img/logo.png" alt="" width="100px" height="70px">
+		</div>
+	</div>
+</div>
+
+</footer>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="js/navshrink.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+	 <script>
+	 $(window).load(function(){
+	 		 $('.loader').fadeOut();
+	 });
+
+	 function initMap(){
+ 		//opcije za mapu
+     var options={
+     	zoom:13,
+     	center:{lat:44.786568,lng:20.448921}
+     }
+     //nova mapa
+     var map=new google.maps.Map(document.getElementById('map'),options);
+     //dodavanje markera
+     var marker=new google.maps.Marker({
+     	posistion:{
+     		lat:44.786568,
+     		lng:20.448921},
+     		map:map
+
+     });
+ }
+
+
+	 </script>
+	 <script async defer
+	 	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8Cdu7g2Hc0HF8l4xiqzCQ6KUdsMo0CCY&callback=initMap">
+	 	 </script>
+
+</body>
+</html>
